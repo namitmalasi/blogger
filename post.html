@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+   	<link href='css\font.css' rel='stylesheet' type='text/css'>
+    <link href='css\post.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="header">
+        <input class="topButtons" type="button" value="Sign Up">
+        <input class="topButtons" type="button" value="Sign In">
+        <a id="pageTitle" class="logo-title">SnipPic</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+    </div>
+
+    <div class="container">
+        <center><h2>The legacy of Jimi Hedrix</h2></center>
+        <span>Fimi</span>
+        <button id="editButton" style="width: 60px;float: right;" type="button" class="btn btn-danger">Edit <span class="glyphicon glyphicon-pencil"></span></button>     
+        <button id="save" style="width: 70px;float: right;" type="button" class="btn btn-danger">Save <span class="glyphicon glyphicon-floppy-disk"></span></button>  
+        <p style="margin-top: 40px;" id="editable" contenteditable="true">this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.this is some line.</p>
+
+        <br>
+        <div class="likeBlogButton">    
+            <button id="likeBlog" style="width: 100px; float: left;" type="button" class="btn btn-danger" value="Like" onclick="CountFn()"><span class="glyphicon glyphicon-thumbs-up"></span> Like</button><br><br>
+            <div id="likeCount">Be the first one to like this!</div>
+        </div><br><br>
+
+        <div>
+            <textarea rows="4" cols="50" type="text" placeholder="Add your comments" id="userComments" value="" style="width: 100%;"></textarea>
+            <button style="width: 100px; float: left;" type="button" class="btn btn-danger" value="Like" id="addList" onclick="addComments(userComments)">Comment</button>
+
+            <div id="commentBox">
+                <div  id="addEventNames"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js\post.js"></script>
+</body>
+</html>
